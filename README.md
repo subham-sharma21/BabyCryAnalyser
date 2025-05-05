@@ -50,7 +50,3 @@ This React application analyzes baby cry audio files to determine the sentiment 
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
-## License
-
-This project is licensed under the MIT License.
-
