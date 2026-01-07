@@ -39,13 +39,13 @@ These limitations strongly influence model performance and are explicitly acknow
 Audio Input (.wav)
 │
 ▼
-Audio Preprocessing (resample · trim · pad)
+Audio Preprocessing(resample · trim · pad)
 │
 ▼
 Feature Extraction(MFCC + Δ + ΔΔ)
 │
 ▼
-Feature Scaling(StandardScaler)
+Feature Scaling (StandardScaler)
 │
 ▼
 Classifier(Logistic Regression / SVM)
@@ -134,4 +134,3 @@ A Streamlit app is provided to:
 pip install -r requirements.txt
 streamlit run streamlit_app.py
 ```
-
