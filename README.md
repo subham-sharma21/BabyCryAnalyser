@@ -37,22 +37,21 @@ These limitations strongly influence model performance and are explicitly acknow
 ## System Architecture
 
 Audio Input (.wav)
-        │
-        ▼
+│
+▼
 Audio Preprocessing (resample · trim · pad)
-        │
-        ▼
+│
+▼
 Feature Extraction(MFCC + Δ + ΔΔ)
-        │
-        ▼
+│
+▼
 Feature Scaling(StandardScaler)
-        │
-        ▼
+│
+▼
 Classifier(Logistic Regression / SVM)
-        │
-        ▼
+│
+▼
 Prediction + Confidence
-
 
 ---
 
@@ -136,55 +135,3 @@ pip install -r requirements.txt
 streamlit run streamlit_app.py
 ```
 
-This README is **honest**, **technical**, and **interview-safe**.
-
----
-
-## 2️⃣ Resume bullets (use ONE of these, not all)
-
-### Strong, clean resume bullet (recommended)
-
-> Built an end-to-end infant cry classification system using MFCC-based audio feature extraction and classical machine learning, addressing class imbalance and model collapse through feature engineering and evaluation-driven iteration.
-
-### Slightly more technical version
-
-> Designed and implemented an audio classification pipeline for infant cry analysis using MFCC, delta, and delta-delta features with class-balanced SVM models, deploying the final system via a Streamlit inference application.
-
-Do **not** add percentages unless explicitly asked.  
-Do **not** claim “high accuracy”.
-
----
-
-## 3️⃣ What NOT to add (this matters)
-
-❌ “AI-powered healthcare solution”  
-❌ “Medical diagnosis”  
-❌ Fake accuracy numbers  
-❌ Deep learning claims you didn’t implement  
-❌ Fancy UI screenshots as main proof  
-
-Your strength here is **engineering maturity**, not hype.
-
----
-
-## Final honest assessment
-
-This project now shows that you:
-- Understand ML failure modes
-- Handle class imbalance correctly
-- Improve models for the *right reasons*
-- Build reproducible pipelines
-- Know when to stop tuning and ship
-
-That puts you **well above average**.
-
----
-
-## Last question (answer honestly)
-
-Do you want next:
-1️⃣ Help integrating this into your **resume properly**
-2️⃣ Guidance on **how to explain this in interviews**
-3️⃣ Or a **v2 roadmap** (augmentation / CNN)  
-
-Pick **one**.
