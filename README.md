@@ -36,6 +36,7 @@ These limitations strongly influence model performance and are explicitly acknow
 
 ## System Architecture
 
+```bash
 Audio Input (.wav)
         │
         ▼
@@ -52,7 +53,7 @@ Classifier (Logistic Regression / SVM)
         │
         ▼
 Prediction + Confidence
-
+```
 ---
 
 ## Feature Engineering
