@@ -1,0 +1,38 @@
+# Virtual environment
+venv/
+env/
+ENV/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+
+# Model files (optional - comment out if you want to include trained models)
+# models/*.pkl
+
+# Raw audio data (large files - uncomment if you want to exclude)
+data/raw/**/*.wav
+
+# But keep processed data
+!data/processed/
