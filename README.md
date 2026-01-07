@@ -36,23 +36,24 @@ These limitations strongly influence model performance and are explicitly acknow
 
 ## System Architecture
 
+```bash
 Audio Input (.wav)
-│
-▼
-Audio Preprocessing(resample · trim · pad)
-│
-▼
-Feature Extraction(MFCC + Δ + ΔΔ)
-│
-▼
+        │
+        ▼
+Audio Preprocessing (resample · trim · pad)
+        │
+        ▼
+Feature Extraction (MFCC + Δ + ΔΔ)
+        │
+        ▼
 Feature Scaling (StandardScaler)
-│
-▼
-Classifier(Logistic Regression / SVM)
-│
-▼
+        │
+        ▼
+Classifier (Logistic Regression / SVM)
+        │
+        ▼
 Prediction + Confidence
-
+```
 ---
 
 ## Feature Engineering
