@@ -4,15 +4,13 @@ An end-to-end machine learning system that classifies infant cry audio into prob
 
 > ⚠️ This project is a research prototype and is **not** a medical diagnostic tool.
 
----
-
 ## Problem Statement
 
 Infant cries contain acoustic patterns that correlate with different physiological or emotional needs.  
 The goal of this project is to analyze short cry audio clips and predict the most likely reason for the cry using audio feature extraction and supervised learning.
 
----
-
+## Screenshot
+![Dashboard](./img/image.png)
 ## Dataset
 
 - Source: Kaggle – Infant Cry Dataset
@@ -31,8 +29,6 @@ The goal of this project is to analyze short cry audio clips and predict the mos
 - Short, noisy audio samples
 
 These limitations strongly influence model performance and are explicitly acknowledged.
-
----
 
 ## System Architecture
 
@@ -55,8 +51,6 @@ Classifier (Logistic Regression / SVM)
 Prediction + Confidence
 ```
 
----
-
 ## Feature Engineering
 
 - MFCCs (Mel-Frequency Cepstral Coefficients)
@@ -67,8 +61,6 @@ Prediction + Confidence
 Final feature vector size: **78**
 
 This captures both spectral and temporal cry characteristics.
-
----
 
 ## Modeling Approach
 
@@ -81,8 +73,6 @@ This captures both spectral and temporal cry characteristics.
 
 Accuracy is intentionally **not** treated as the primary metric due to class imbalance.
 
----
-
 ## Results (Summary)
 
 - Eliminated majority-class collapse using class weighting
@@ -90,8 +80,6 @@ Accuracy is intentionally **not** treated as the primary metric due to class imb
 - Demonstrated correct ML behavior under real-world constraints
 
 The model performance is data-limited, not pipeline-limited.
-
----
 
 ## Inference Application
 
@@ -101,15 +89,11 @@ A Streamlit app is provided to:
 - Run inference using a locked v1 model
 - Display predicted cry reason and confidence score
 
----
-
 ## Ethical Considerations
 
 - Not intended for medical or clinical use
 - Results may vary across infants and environments
 - Dataset bias and small sample sizes are explicitly acknowledged
-
----
 
 ## Tech Stack
 
@@ -119,16 +103,12 @@ A Streamlit app is provided to:
 - Streamlit
 - NumPy, Pandas
 
----
-
 ## Future Work
 
 - Data augmentation for minority classes
 - Cross-validation across multiple splits
 - CNN-based spectrogram models (v2)
 - Mobile-friendly frontend
-
----
 
 ## How to Run
 
